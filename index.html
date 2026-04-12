@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Field & Feast</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-        <h1>Field & Feast</h1>
-        <p>Harvested with Care, Served with Elegance</p>
+            <img src="images/fieldandfeast-logo.png" alt="Field & Feast logo">
+            <h1>Field & Feast</h1>
+            <p>Harvested with Care, Served with Elegance</p>
             <nav>
                 <ul>
                     <li><a href="#about">About Us</a></li>
@@ -17,10 +19,8 @@
                 </ul>
             </nav>
         </header>
+
         <main>
-
-            <img src="images/fieldandfeast-logo.png" alt="Field & Feast logo">
-
             <section id="about">
                 <h2>Welcome to Field & Feast</h2>
                 <p>
@@ -31,32 +31,42 @@
                 </p>
             </section>
 
+            <hr>
+
             <section id="offerings">
                 <h2>Our Offerings</h2>
 
-                <h3>Artisan Provisions</h3>
-                <p>
-                    Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.
-                </p>
-
-                <h3>Exclusive Dining Experiences</h3>
-                <p>
-                    Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.
-                </p>
-
-                <h3>The Field & Feast Monthly Basket</h3>
-                <p>
-                    Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.
-                </p>
                 <ul>
-                    <li>Hand-Harvested Produce: Fresh, organic fruits and vegetables.</li>
-                    <li>Artisan-Crafted Goods: Specialty cheeses, house-made preserves, and small-batch baked goods.</li>
-                    <li>Exclusive Recipes & Pairings: Thoughtfully designed by our chefs to inspire culinary creativity.</li>
+                    <li id="artisan">
+                        <h3>Artisan Provisions</h3>
+                        <p>
+                            Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.
+                        </p>
+                    </li>
+                    <li id="dining">
+                        <h3>Exclusive Dining Experiences</h3>
+                        <p>
+                            Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.
+                        </p>
+                    </li>
+                    <li id="basket">
+                        <h3>The Field & Feast Monthly Basket</h3>
+                        <p>
+                            Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.
+                        </p>
+                        <ul>
+                            <li>Hand-Harvested Produce: Fresh, organic fruits and vegetables.</li>
+                            <li>Artisan-Crafted Goods: Specialty cheeses, house-made preserves, and small-batch baked goods.</li>
+                            <li>Exclusive Recipes & Pairings: Thoughtfully designed by our chefs to inspire culinary creativity.</li>
+                        </ul>
+                        <p>
+                            Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.
+                        </p>
+                    </li>
                 </ul>
-                <p>
-                    Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.
-                </p>
             </section>
+
+            <hr>
 
             <section id="gallery">
                 <h2>A Gallery of Field & Feast</h2>
@@ -74,13 +84,19 @@
 
                 <button>View Our Full Gallery</button>
             </section>
+
+            <hr>
+
         </main>
+
         <footer>
-            <small>123 Estate Lane, Wine Country, CA</small>
-            <small>(555) 123-4567</small>
-            <small>hello@fieldandfeast.com</small>
-            <small>Instagram</small>
-            <small>Facebook</small>
+            <small>
+                123 Estate Lane, Wine Country, CA
+                (555) 123-4567
+                <a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a>
+                
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </small>
         </footer>
     </body>
 </html>
