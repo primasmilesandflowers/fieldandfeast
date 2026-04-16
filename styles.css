@@ -129,22 +129,19 @@ hr {
     color: var(--champagne-gold);
 }
 
-#offerings ul {
+.offerings ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
 
-#offerings li#artisan, #offerings li#dining, #offerings li#basket {
+.offerings li#artisan, .offerings li#dining, .offerings li#basket {
     background-color: var(--olive-green);
     border-radius: 8px;
     color: var(--soft-white);
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-#offerings ul {
-    padding: 1rem;
 }
 
 #basket ul {
@@ -172,18 +169,23 @@ figcaption {
     font-style: italic;
 }
 
-button {
+#gallery a {
     background-color: var(--olive-green);
     color: var(--soft-white);
     border: none;
-    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-family: var(--font-family);
     cursor: pointer;
     margin: 0 1rem 0.5rem 1rem;
-    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
 }
 
 footer {
@@ -202,5 +204,39 @@ footer a {
 
 }
 /* MEDIA QUERY (medium) */
+@media (min-width: 600px) {
+    .offerings ul {
+        display: grid;
+        grid-template-areas:
+        "artisan dining"
+        "basket basket";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .offerings li#artisan {
+        grid-area: artisan;
+    }
+
+    .offerings li#dining {
+        grid-area: dining;
+    }
+
+    .offerings li#basket {
+        grid-area: basket;
+    }
+
+    #basket ul {
+        list-style: disc;
+        width: 100%;
+        display: block;
+        padding: 1rem;
+        line-height: normal;
+    }
+
+
+}
 /* MEDIA QUERY (large) */
 /* MEDIA QUERY (XL) */
