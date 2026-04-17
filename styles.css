@@ -236,7 +236,141 @@ footer a {
         line-height: normal;
     }
 
+    #gallery {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "pg pg"
+        "gallery1 gallery2"
+        "gallery3 gallery4"
+        "gallery5 ."
+        "button button";        
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 
+    #gallery h2 {
+        grid-area: header;
+    }
+
+    #gallery p {
+        grid-area: pg;
+    }
+
+    #gallery figure:nth-child(1) {
+        grid-area: gallery1;
+    }
+
+    #gallery figure:nth-child(2) {
+        grid-area: gallery2;
+    }
+
+    #gallery figure:nth-child(3) {
+        grid-area: gallery3;
+    }
+
+    #gallery figure:nth-child(4) {
+        grid-area: gallery4;
+    }
+
+    #gallery figure:nth-child(5) {
+        grid-area: gallery5;
+    }
+    
+    #gallery a {
+        grid-area: button;
+    }
 }
+
 /* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+    #gallery {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "pg pg pg"
+        "gallery1 gallery2 gallery3"
+        "gallery4 gallery5 ."
+        "button button button";        
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #gallery h2 {
+        grid-area: header;
+    }
+
+    #gallery p {
+        grid-area: pg;
+    }
+
+    #gallery figure:nth-child(1) {
+        grid-area: gallery1;
+    }
+
+    #gallery figure:nth-child(2) {
+        grid-area: gallery2;
+    }
+
+    #gallery figure:nth-child(3) {
+        grid-area: gallery3;
+    }
+
+    #gallery figure:nth-child(4) {
+        grid-area: gallery4;
+    }
+
+    #gallery figure:nth-child(5) {
+        grid-area: gallery5;
+    }
+    
+    #gallery a {
+        grid-area: button;
+    }
+}
+
 /* MEDIA QUERY (XL) */
+@media (min-width: 1200px) {
+    #gallery {
+        display: grid;
+        grid-template-areas:
+        "header header header header header"
+        "pg pg pg pg pg"
+        "gallery1 gallery2 gallery3 gallery4 gallery5"
+        "button button button button button";
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
+    #gallery h2 {
+        grid-area: header;
+    }
+
+    #gallery p {
+        grid-area: pg;
+    }
+
+    #gallery figure:nth-child(1) {
+        grid-area: gallery1;
+    }
+
+    #gallery figure:nth-child(2) {
+        grid-area: gallery2;
+    }
+
+    #gallery figure:nth-child(3) {
+        grid-area: gallery3;
+    }
+
+    #gallery figure:nth-child(4) {
+        grid-area: gallery4;
+  }
+
+    #gallery figure:nth-child(5) {
+        grid-area: gallery5;
+    }
+        
+    #gallery a {
+        grid-area: button;
+    }
+}
